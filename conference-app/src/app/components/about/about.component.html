@@ -1,0 +1,19 @@
+<div class="container">
+    <h1>About Us</h1>
+    
+
+    <label for="name">Enter Your Name:</label>
+    <input 
+      id="name" 
+      type="text" 
+      [value]="userName" 
+      (input)="updateUserName($event)" 
+      class="form-control" 
+      placeholder="Type your name" />
+    
+
+    <p>Your name is: {{ userName }}</p>
+
+    <button (click)="submitForm()" class="btn btn-primary mt-3">Submit</button>
+  </div>
+  
